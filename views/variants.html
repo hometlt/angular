@@ -1,0 +1,9 @@
+
+<div class="panel-heading">{{slide.text}}</div>
+<div class="panel-body" >
+    <button ng-repeat="variant in slide.variants"
+            ng-click="select(variant.variantId)"
+            type="button" class="btn btn-default btn-block">
+        {{variant.text}}
+    </button>
+</div>

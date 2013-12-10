@@ -1,0 +1,27 @@
+
+<div class="panel-heading">Результаты</div>
+<div class="panel-body" >
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>выбранный вариант ответа</th>
+                <th>комментарий</th>
+                <th>очки</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="result in tableData">
+                <td>{{result.text}}</td>
+                <td>{{result.comment}}</td>
+                <td>{{result.points}}</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="2" class="text-right">Сумма</td>
+                <td>{{score}}</td>
+            </tr>
+        </tfoot>
+    </table>
+    <button type="button" class="btn btn-info center-block" ng-click="restart()">Попробовать еще раз</button>
+</div>
